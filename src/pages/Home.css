@@ -1,80 +1,76 @@
 .home-container {
-    min-height: 100vh;
+    min-height: calc(100vh - 60px);
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 40px;
-    background: linear-gradient(135deg, #e3f2fd, #fce4ec);
+    justify-content: center;
+    padding: 40px 20px;
 }
 
 .home-content {
-    max-width: 700px;
+    max-width: 650px;
     text-align: center;
 }
 
+.home-title {
+    font-size: 48px;
+    font-weight: 700;
+}
+
 .home-title span {
-    color: #1976d2;
+    color: var(--accent);
 }
 
 .home-subtitle {
-    font-size: 1.5rem;
-    color: #444;
-    margin-bottom: 20px;
+    font-size: 22px;
+    margin-top: 10px;
+    opacity: 0.85;
 }
 
 .home-description {
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 35px;
+    margin-top: 20px;
+    font-size: 17px;
+    color: var(--text-secondary);
+    line-height: 1.5;
 }
 
 .home-buttons {
+    margin-top: 40px;
     display: flex;
     justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-    margin-bottom: 25px;
+    gap: 14px;
 }
 
 .home-btn {
     padding: 12px 20px;
-    border-radius: 8px;
-    background: white;
-    border: 2px solid #1976d2;
-    color: #1976d2;
-    font-weight: 600;
-    text-decoration: none;
-    transition: 0.3s;
+    border-radius: var(--radius);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    transition: var(--transition);
 }
 
 .home-btn:hover {
-    background: #1976d2;
+    background: var(--accent);
     color: white;
+    border-color: var(--accent);
 }
 
 .home-btn.primary {
-    background: #1976d2;
+    background: var(--accent);
     color: white;
 }
 
-.home-btn.primary:hover {
-    background: #115293;
-}
-
 .home-social {
-    margin-top: 15px;
+    margin-top: 40px;
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 20px;
 }
 
 .home-social a {
-    color: #1976d2;
-    font-weight: 600;
-    text-decoration: none;
-    transition: 0.3s;
+    opacity: 0.8;
+    transition: opacity var(--transition);
 }
 
 .home-social a:hover {
-    color: #0d47a1;
+    opacity: 1;
 }

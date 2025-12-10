@@ -1,11 +1,36 @@
 .project-card {
-    border: 1px solid #ddd;
-    padding: 16px;
-    border-radius: 8px;
-    transition: 0.3s;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px;
+    transition: var(--transition);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .project-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+}
+
+.project-card-img {
+    width: 100%;
+    height: 180px;
+    border-radius: var(--radius);
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.project-card h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.project-card p {
+    font-size: 15px;
+    color: var(--text-secondary);
+    margin: 8px 0 16px;
+}
+
+.project-card a {
+    font-weight: 500;
 }

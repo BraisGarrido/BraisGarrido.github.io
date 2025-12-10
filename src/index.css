@@ -1,29 +1,54 @@
-/* VARIABLES LIGHT MODE */
+/* Theme variables */
+
 :root {
-  --bg-color: #ffffff;
-  --text-color: #111;
-  --card-bg: #f5f5f5;
-  --accent: #4b7bff;
+  --bg: #ffffff;
+  --bg-secondary: #f5f5f7;
+  --text: #111111;
+  --text-secondary: #555;
+  --card-bg: #ffffff;
+  --border: #d2d2d7;
+  --accent: #007aff;
+  --radius: 12px;
+  --transition: 0.25s ease;
 }
 
-/* VARIABLES DARK MODE */
 [data-theme="dark"] {
-  --bg-color: #0b0f19;
-  --text-color: #f1f1f1;
-  --card-bg: #1a1f2e;
-  --accent: #6d9bff;
+  --bg: #000000;
+  --bg-secondary: #111111;
+  --text: #f5f5f7;
+  --text-secondary: #cccccc;
+  --card-bg: #1c1c1e;
+  --border: #3a3a3c;
+  --accent: #0a84ff;
 }
 
-/* Estilos globales */
+/* Global layout */
+
 body {
-  background: var(--bg-color);
-  color: var(--text-color);
   margin: 0;
-  font-family: system-ui, sans-serif;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+  transition: background var(--transition), color var(--transition);
 }
 
-/* Links */
 a {
   color: var(--accent);
   text-decoration: none;
+}
+
+/* spacing utilities globales*/
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+.projects-grid {
+  margin-top: 40px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  align-items: stretch;
 }
