@@ -1,0 +1,39 @@
+.theme-toggle {
+    width: 52px;
+    height: 28px;
+    border-radius: 20px;
+    background: var(--navbar-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--border-color);
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    transition: background 0.3s ease;
+}
+
+.toggle-indicator {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--text);
+    transition: all 0.3s ease;
+}
+
+/* Light */
+.toggle-indicator.light {
+    transform: translateX(24px);
+}
+
+/* Dark */
+.toggle-indicator.dark {
+    transform: translateX(0);
+}
+
+/* System (punto centrado) */
+.toggle-indicator.system {
+    transform: translateX(12px);
+    opacity: 0.7;
+}

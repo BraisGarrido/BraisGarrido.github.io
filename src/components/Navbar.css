@@ -1,19 +1,30 @@
 .navbar {
-    background: #161b22;
-    padding: 20px;
     display: flex;
-    justify-content: center;
-    gap: 40px;
-    border-bottom: 1px solid #21262d;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 50;
 }
 
+/* Contenedor de los links */
+.navbar-links {
+    display: flex;
+    gap: 32px;
+}
+
+/* Estilo Apple para los enlaces */
 .navbar a {
-    color: #e6edf3;
     text-decoration: none;
-    font-size: 1.1rem;
-    transition: color 0.2s ease;
+    color: var(--text);
+    font-weight: 500;
+    transition: opacity 0.2s ease;
 }
 
 .navbar a:hover {
-    color: #58a6ff;
+    opacity: 0.6;
 }
