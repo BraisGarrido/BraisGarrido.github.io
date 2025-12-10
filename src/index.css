@@ -1,61 +1,29 @@
+/* VARIABLES LIGHT MODE */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111;
+  --card-bg: #f5f5f5;
+  --accent: #4b7bff;
+}
+
+/* VARIABLES DARK MODE */
+[data-theme="dark"] {
+  --bg-color: #0b0f19;
+  --text-color: #f1f1f1;
+  --card-bg: #1a1f2e;
+  --accent: #6d9bff;
+}
+
+/* Estilos globales */
 body {
+  background: var(--bg-color);
+  color: var(--text-color);
   margin: 0;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+  font-family: system-ui, sans-serif;
 }
 
-h1, h2, h3 {
-  margin: 0.5em 0;
-}
-
-.navbar {
-  background: #333;
-  color: #fff;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nevbar ul {
-  display: flex;
-  list-style: none;
-  gap: 15px;
-}
-
-.navbar a {
-  color: #fff;
+/* Links */
+a {
+  color: var(--accent);
   text-decoration: none;
-}
-
-.projects-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.project-card {
-  border: 1px solid #ccc;
-  padding: 15px;
-  width: 300px;
-}
-
-footer {
-  background: #333;
-  color: #fff;
-  text-align: center;
-  padding: 15px;
-  margin-top: 20px;
-}
-
-@media (max-width: 768px) {
-  .projects-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .navbar ul {
-    flex-direction: column;
-    gap: 10px;
-  }
 }

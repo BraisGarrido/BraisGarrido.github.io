@@ -1,15 +1,19 @@
 import ProjectCard from "../components/ProjectCard";
-import starProject from '../assets/starProjectData';
+import starProjectData from "../assets/starProjectData";
 
 export default function ProjectStar() {
     return (
-        <section id="projects-star">
+        <>
             <h2>Proyecto estrella</h2>
-            <div className="projects-grid">
-                {starProject.map(project => (
-                    <ProjectCard key={project.title} {...project} />
-                ))}
-            </div>
-        </section>
+            {starProjectData.map((proj, i) => (
+                <ProjectCard
+                    key={i}
+                    title={proj.title}
+                    description={proj.description}
+                    link={proj.link}
+                    image={proj.image}
+                />
+            ))}
+        </>
     );
 }

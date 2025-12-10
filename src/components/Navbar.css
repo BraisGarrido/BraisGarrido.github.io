@@ -1,16 +1,19 @@
 .navbar {
-    background: #333;
-    color: white;
-    padding: 10px 20px;
-}
-
-.navbar ul {
-    list-style: none;
+    background: #161b22;
+    padding: 20px;
     display: flex;
-    gap: 15px
+    justify-content: center;
+    gap: 40px;
+    border-bottom: 1px solid #21262d;
 }
 
 .navbar a {
-    color: white;
+    color: #e6edf3;
     text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.2s ease;
+}
+
+.navbar a:hover {
+    color: #58a6ff;
 }

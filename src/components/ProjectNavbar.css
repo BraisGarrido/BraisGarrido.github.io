@@ -1,0 +1,32 @@
+.project-card {
+    background: #161b22;
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.project-card-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #8b949e;
+}
+
+.project-card a {
+    color: #58a6ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}

@@ -5,13 +5,13 @@ const mobileProjects: ProjectCardProps[] = [
     title: "Mi App en Swift",
     description: "Una app desarrollada en Xcode.",
     link: "https://github.com/tu-repo",
-    image: "/assets/tu-imagen.png"
+    image: "/assets/imagen-prueba.jpg"
   },
   {
     title: "App Android",
     description: "Proyecto desarrollado en Android Studio.",
     link: "https://github.com/tu-repo",
-    image: "/assets/tu-imagen-2.png"
+    image: "/assets/imagen-prueba.jpg"
   }
 ];
 

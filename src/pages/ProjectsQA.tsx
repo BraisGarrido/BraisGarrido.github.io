@@ -3,13 +3,20 @@ import qaProjects from '../assets/qaProjectsData';
 
 export default function ProjectsQA() {
     return (
-        <section id="projects-qa">
-            <h2>QA Testing</h2>
+        <>
+            <h2>Proyectos QA</h2>
+
             <div className="projects-grid">
-                {qaProjects.map(project => (
-                    <ProjectCard key={project.title} {...project} />
+                {qaProjects.map((proj, i) => (
+                    <ProjectCard
+                        key={i}
+                        title={proj.title}
+                        description={proj.description}
+                        link={proj.link}
+                        image={proj.image}
+                    />
                 ))}
-            </div>
-        </section>
+            </div>        
+        </>
     );
 }
