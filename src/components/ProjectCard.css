@@ -73,3 +73,26 @@
     grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
     padding: 40px 0;
 }
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .project-card {
+        width: 100%;
+        max-width: none;
+        height: auto;
+        padding: 20px;
+    }
+
+    .project-card img {
+        height: 220px;
+        border-radius: 20px;
+    }
+
+    .project-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .project-card p {
+        font-size: 0.95rem;
+    }
+}

@@ -87,3 +87,26 @@
 .home-social a:hover {
     opacity: 0.5;
 }
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .home-content {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .home-title {
+        font-size: 2rem;
+    }
+
+    .home-description {
+        font-size: 1rem;
+        max-width: none;
+        padding: 0 10px;
+    }
+
+    .home-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
